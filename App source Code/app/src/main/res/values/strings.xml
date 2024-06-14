@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RegistrationSystem</string>
+
+    <array name="department">
+
+        <item>Select Department</item>
+        <item>Sales And marketing</item>
+        <item>Production</item>
+        <item>Human Resource</item>
+
+
+    </array>
+
+
+</resources>

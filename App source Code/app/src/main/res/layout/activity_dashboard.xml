@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/bg"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showError"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/seller"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role"
+                android:layout_gravity="center"
+                android:id="@+id/role"
+                android:textSize="20dp"
+                android:textColor="@color/main"
+                android:padding="20dp"
+                />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="username: "
+             android:id="@+id/usertemp"
+             android:textColor="@color/main"
+             android:padding="20dp"
+             android:drawableLeft="@drawable/user_org"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username: "
+                android:id="@+id/userProfile"
+                android:textColor="@color/main2"
+                android:layout_toRightOf="@id/usertemp"
+                android:padding="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/deptemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usertemp"
+                android:drawableLeft="@drawable/department_org"
+                android:padding="20dp"
+                android:text="Department: "
+                android:textColor="@color/main" />
+
+            <TextView
+                android:id="@+id/emailProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/departmentProfile"
+                android:layout_toRightOf="@id/usertemp"
+                android:padding="20dp"
+                android:text="email"
+                android:textColor="@color/main2" />
+
+            <TextView
+                android:id="@+id/emailTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deptemp"
+                android:drawableLeft="@drawable/user_org"
+                android:padding="20dp"
+                android:text="Email Address: "
+                android:textColor="@color/main" />
+
+            <TextView
+                android:id="@+id/departmentProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userProfile"
+                android:layout_toRightOf="@id/usertemp"
+                android:padding="20dp"
+                android:text="department"
+                android:textColor="@color/main2" />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="logout"
+                android:layout_gravity="right"
+                android:id="@+id/logout"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/logout_org"
+                android:textColor="@color/main"
+                android:padding="20dp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
